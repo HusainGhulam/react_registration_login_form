@@ -1,0 +1,111 @@
+/* Container Styling */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 20px;
+  }
+  
+  .registration-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .registration-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Form Title */
+  .form-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+  }
+  
+  /* Input Group Styling */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fdfdfd;
+  }
+  
+  .input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  /* Submit Button Styling */
+  .submit-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .registration-form {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-title {
+      font-size: 22px;
+    }
+  
+    .input-group input {
+      font-size: 15px;
+      padding: 10px;
+    }
+  
+    .submit-button {
+      padding: 10px;
+      font-size: 15px;
+    }
+  }
+  
