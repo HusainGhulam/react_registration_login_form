@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './RegistrationForm.css'; // Import the CSS file
+import { FaCashRegister } from "react-icons/fa6";
 
 export const RegistrationFormReact = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +30,9 @@ export const RegistrationFormReact = () => {
     <div className="main-container">
          
       <form className="registration-form" onSubmit={handleSubmit}>
-        <h2 className="form-title">Registration Form</h2>
+        <h2 className="form-title">
+          <FaCashRegister />
+          Registration Form</h2>
         <p>{formData.firstName}:{formData.lastName}
         </p>
         <div className="input-group">
